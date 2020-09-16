@@ -13,8 +13,8 @@
         box-sizing: inherit;
       }
       body {
-	  
-         margin-top: 0%;
+		margin-left:0;
+        margin-top: 0%;
 		overflow: hidden;
         background: #444;
       }
@@ -88,13 +88,15 @@
           transform: rotate(360deg);
         }
       }
+	  
+	
 
     </style>
   </head>
 
   <body>
   
-  <button top="0" align-items="center" onclick="gameInstance.SetFullscreen(1)"  >click me</button>
+  <button top="0"  onclick="gameInstance.SetFullscreen(1)"  >click me</button>
     <div id="gameContainer"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
