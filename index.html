@@ -13,9 +13,7 @@
         box-sizing: inherit;
       }
       body {
-		margin-left:0;
-        margin-top: 0%;
-		overflow: hidden;
+        margin: 0;
         background: #444;
       }
       #gameContainer {
@@ -88,15 +86,11 @@
           transform: rotate(360deg);
         }
       }
-	  
-	
 
     </style>
   </head>
 
   <body>
-  
-  <button top="0"  onclick="gameInstance.SetFullscreen(1)"  >click me</button>
     <div id="gameContainer"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
@@ -123,7 +117,7 @@
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
           loader.style.display = "none";
-      }, 20);
+      }, 2000);
     }
   }
   </script>
