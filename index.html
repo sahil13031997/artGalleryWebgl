@@ -13,14 +13,12 @@
         box-sizing: inherit;
       }
       body {
-	 
         margin: 0;
         background: #444;
       }
       #gameContainer {
-		
         width: 100vw;
-        height: 98vh;
+        height: 100vh;
       }
       canvas {
         width: 100%;
@@ -119,7 +117,7 @@
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
           loader.style.display = "none";
-      }, 20);
+      }, 2000);
     }
   }
   </script>
